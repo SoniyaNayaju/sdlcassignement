@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins', sans-serif ;
+    box-sizing: border-box;
+}
+
+body{
+    background: #d6c2a3;
+}
+/* =----------------------=-------------------NAvbar------------- */
+/* .container nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} */
+
+.navbar{
+    background-color: #677490;
+    border-radius: 20px;
+}
+.logo{
+    width: 130px;
+    height: 80px;
+    border-radius: 10px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #af4ac3;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #969bbc;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/* ----------HEADER_________________ */
+#header{
+    width: 100%;
+    height: 100vh;
+}
+.img{
+    width: 100%;
+    /* height: 100vh; */
+  
+}
+.image{
+    background-color: rgb(216, 112, 159);
+    width: 500px;
+    height: 290px;
+    float: right;
+    margin-top: -30%;
+    margin-right: 5%;
+    border-radius: 10px;
+
+}
+.container{
+    padding: 20px 7%;
+}
+.header-text{
+    margin-top: -7px;
+    font-size: 18px;
+    font-weight: 300px;
+    padding-left: 10px;
+    width: 50%;
+    /* background-color: orange; */
+}
+.header-text p{
+    margin-top: 15px;
+}
+.header-text h1{
+    font-size: 30px;
+    margin-top: 25px;
+}
+.header-text h1 span{
+    color: #c66859;
+}
+.header-text .text{
+    font-size: 18px;
+    margin-top: 37px;
+    
+}
+.header-text .text span{
+    color: #ca844a;
+
+}
+.header-text .money{
+    width: 47%;
+    height: 230px;
+    margin-left: 27%;
+    margin-top: -20px;
+    border-radius: 50%;
+} 
+
+/* ------------------------services------------- */
+.services{
+   padding: 30px ,0;
+}
+.services .sub-title{
+    margin-top: -70px;
+}
+.services-list{
+    display: grid ;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div{
+    background:  #677490;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300 ;
+    border-radius:10px ;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div .fit{
+    height: 200px;
+    width: 250px;
+    margin-top: -7%;
+    margin-left: -10px;
+}
+
+.services-list i{
+    font-size: 25px ;
+    margin-bottom: 30%;
+    margin-top: -10px;
+}
+
+.services-list h2{
+    font-size: 30px ;
+    font-weight: 500 ;
+    margin-bottom: 35px;
+    margin-top: -60px;
+}
+
+.services-list a{
+    text-decoration: none;
+    color: #8f6498;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services-list a:hover{
+    color: #262626;
+}
+
+.services-list div:hover{
+    background: #86886e;
+    transform: translateY(-10px);
+}
